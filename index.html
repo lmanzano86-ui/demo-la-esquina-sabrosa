@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Esquina Sabrosa — Comida latina y caribeña en Tampa, FL</title>
+<meta name="description" content="La Esquina Sabrosa, 2730 W Waters Ave, Tampa, FL. Comida latina y caribeña. Borrador de muestra, no publicado.">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#2B1D16;background:#FFF8F0;line-height:1.55}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  header{background:#2B1D16;color:#fff;padding:14px 0;position:sticky;top:0}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .logo{font-size:24px;font-weight:800;letter-spacing:.5px}
+  .logo span{color:#F2A65A}
+  nav a{color:#fff;text-decoration:none;margin:0 10px;font-size:14px}
+  .lang button{background:#B4532A;color:#fff;border:0;border-radius:20px;padding:8px 14px;cursor:pointer;font-weight:700}
+  .hero{padding:48px 0}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+  h1{font-size:44px;line-height:1.15;margin:0 0 12px}
+  h1 span{color:#B4532A}
+  h2{font-size:28px;margin:0 0 8px;color:#2B1D16}
+  h3{font-size:19px;margin:0 0 6px;color:#B4532A}
+  p{margin:0 0 14px}
+  .btn{display:inline-block;background:#B4532A;color:#fff;text-decoration:none;padding:12px 20px;border-radius:24px;font-weight:700;margin:6px 8px 6px 0}
+  .btn.outline{background:transparent;color:#2B1D16;border:2px solid #2B1D16}
+  .badge{display:inline-block;background:#FDEBD7;border:1px solid #F2A65A;border-radius:20px;padding:6px 12px;font-size:13px;margin:4px 4px 4px 0}
+  section{padding:40px 0}
+  section.alt{background:#FDEBD7}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .card{background:#fff;border:1px solid #E8D5BE;border-radius:14px;padding:18px}
+  .price{float:right;font-weight:800;color:#B4532A}
+  .photo{border:2px dashed #B4532A;border-radius:14px;background:#FFF3E0;min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-weight:700;color:#7A4A21}
+  .photo.small{min-height:140px}
+  .note{font-size:13px;color:#7A4A21;background:#FFF3E0;border-left:4px solid #F2A65A;padding:10px 14px;margin:14px 0}
+  .menu-cat{margin-top:28px}
+  .menu-cat h3{font-size:22px;border-bottom:2px solid #F2A65A;padding-bottom:6px}
+  .menu-item{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #EFE0CC}
+  footer{background:#2B1D16;color:#fff;padding:28px 0;text-align:center}
+  footer a{color:#F2A65A}
+  @media(max-width:760px){
+    .hero-grid,.grid3,.grid2{grid-template-columns:1fr}
+    h1{font-size:32px}
+    nav{display:none}
+  }
+</style>
+<script>
+function setLang(l){
+  document.querySelectorAll('[data-es]').forEach(function(el){
+    el.textContent = (l==='en') ? el.getAttribute('data-en') : el.getAttribute('data-es');
+  });
+  document.documentElement.lang = l;
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo">La Esquina <span>Sabrosa</span></div>
+    <nav>
+      <a href="#nosotros" data-es="Nosotros" data-en="About">Nosotros</a>
+      <a href="#populares" data-es="Los más pedidos" data-en="Most ordered">Los más pedidos</a>
+      <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
+      <a href="#catering" data-es="Catering" data-en="Catering">Catering</a>
+      <a href="#visitanos" data-es="Visítanos" data-en="Visit us">Visítanos</a>
+    </nav>
+    <div class="lang"><button onclick="setLang('es')">ES</button> <button onclick="setLang('en')">EN</button></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-es="Sabor latino y caribeño, en la esquina de Waters Ave." data-en="Latin and Caribbean flavor, on the corner of Waters Ave.">Sabor latino y caribeño, <span>en la esquina de Waters Ave.</span></h1>
+        <p data-es="Comida latina y caribeña, rápida y casera, en Tampa. Los platos que más piden los clientes, sopas, mangú, pernil y café con leche." data-en="Fast, homemade Latin and Caribbean food in Tampa. Customer favorites, soups, mangú, pernil and café con leche.">Comida latina y caribeña, rápida y casera, en Tampa. Los platos que más piden los clientes, sopas, mangú, pernil y café con leche.</p>
+        <p>
+          <a class="btn" href="tel:+18139311443" data-es="Llámanos: (813) 931-1443" data-en="Call us: (813) 931-1443">Llámanos: (813) 931-1443</a>
+          <a class="btn outline" href="#menu" data-es="Ver el menú" data-en="See the menu">Ver el menú</a>
+        </p>
+        <p>
+          <span class="badge">Restaurantji 4.4 / 35 reseñas</span>
+          <span class="badge">DoorDash 4.3</span>
+          <span class="badge" data-es="Para llevar y delivery" data-en="Takeout and delivery">Para llevar y delivery</span>
+        </p>
+        <p class="note"><strong data-es="Muestra en borrador — no publicada." data-en="Draft sample — not published.">Muestra en borrador — no publicada.</strong> <span data-es="Las calificaciones son de directorios (Restaurantji y DoorDash), no de Google. Todos los precios son de delivery y están por confirmar con el dueño; no son precios de mostrador." data-en="Ratings are from directories (Restaurantji and DoorDash), not Google. All prices are delivery prices, to confirm with the owner; they are not counter prices.">Las calificaciones son de directorios (Restaurantji y DoorDash), no de Google. Todos los precios son de delivery y están por confirmar con el dueño; no son precios de mostrador.</span></p>
+      </div>
+      <img class="photo" src="fotos/mojarra-pro.jpg" alt="Mojarra frita con arroz y yuca — foto real del negocio, regenerada con calidad profesional">
+    </div>
+  </section>
+
+  <section id="nosotros" class="alt">
+    <div class="wrap">
+      <h2 data-es="Nosotros" data-en="About us">Nosotros</h2>
+      <div class="grid2">
+        <p>La Esquina Sabrosa es un restaurante de comida española, latina y caribeña en Tampa, en el corredor de Waters Ave. Sus clientes destacan la comida casera, las porciones y los precios razonables. Entre los platos que mencionan: arroz con habichuelas y pollo, mangú, chofán con pernil y sopas.</p>
+        <img class="photo small" src="fotos/cerdo-pro.jpg" alt="Plato real del negocio, regenerado con calidad profesional">
+      </div>
+      <p class="note">Sin página web propia hoy: solo aparece en directorios (Restaurantji) y en DoorDash. Esta muestra propone su primera web propia, en español e inglés.</p>
+    </div>
+  </section>
+
+  <section id="populares">
+    <div class="wrap">
+      <h2 data-es="Los más pedidos" data-en="Most ordered">Los más pedidos</h2>
+      <p>Según DoorDash, los platos más pedidos son: Sopa de Res Grande, Tamal Cubano y Empanadas. Precios de delivery, por confirmar con el dueño.</p>
+      <div class="grid3">
+        <div class="card"><h3>Sopa de Res Grande</h3><p>La más pedida en DoorDash. <span class="price">$18.99*</span></p></div>
+        <div class="card"><h3>Tamal Cubano</h3><p>2 por orden. <span class="price">$4.99*</span></p></div>
+        <div class="card"><h3>Empanadas</h3><p>Las favoritas de los clientes. <span class="price">$4.99*</span></p></div>
+        <div class="card"><h3>Sándwich Cubano</h3><p>Clásico de la casa. <span class="price">$12.49*</span></p></div>
+        <div class="card"><h3>Mangú</h3><p>Destacado en reseñas de clientes. <span class="price">$13.99*</span></p></div>
+        <div class="card"><h3>Mofongo con churrasco</h3><p>Plato fuerte. <span class="price">$27.99*</span></p></div>
+      </div>
+      <p class="note">* Precio de delivery, por confirmar con el dueño. No es precio de mostrador.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="alt">
+    <div class="wrap">
+      <h2 data-es="Menú" data-en="Menu">Menú</h2>
+      <p>Todos los precios de esta muestra son de delivery y están por confirmar con el dueño. Las categorías Desayunos, Menú de niños, Tacos y Ensaladas existen en el menú de delivery, pero su contenido completo está por confirmar en la visita y no se inventa aquí.</p>
+
+      <div class="menu-cat"><h3>Caldos</h3>
+        <div class="menu-item"><span>Sopa de Res Grande</span><strong>$18.99*</strong></div>
+        <div class="menu-item"><span>Sopa de Pollo Grande</span><strong>$17.99*</strong></div>
+      </div>
+
+      <div class="menu-cat"><h3>Aperitivos</h3>
+        <div class="menu-item"><span>Empanadas</span><strong>$4.99*</strong></div>
+        <div class="menu-item"><span>Tamal Cubano (2 por orden)</span><strong>$4.99*</strong></div>
+      </div>
+
+      <div class="menu-cat"><h3>Sándwiches</h3>
+        <div class="menu-item"><span>Sándwich Cubano</span><strong>$12.49*</strong></div>
+      </div>
+
+      <div class="menu-cat"><h3>Almuerzo</h3>
+        <div class="menu-item"><span>Mangú</span><strong>$13.99*</strong></div>
+        <div class="menu-item"><span>Bistec Encebollado</span><strong>$18.99*</strong></div>
+        <div class="menu-item"><span>Pernil</span><strong>$15.99*</strong></div>
+        <div class="menu-item"><span>Chivo</span><strong>$18.99*</strong></div>
+        <div class="menu-item"><span>Mofongo con churrasco</span><strong>$27.99*</strong></div>
+        <div class="menu-item"><span>Mojarra Frita</span><strong>$23.99*</strong></div>
+      </div>
+
+      <div class="menu-cat"><h3>Bebidas</h3>
+        <div class="menu-item"><span>Batidos</span><strong>$5.99*</strong></div>
+        <div class="menu-item"><span>Jugos Naturales</span><strong>$4.99*</strong></div>
+        <div class="menu-item"><span>Café con Leche</span><strong>$4.49*</strong></div>
+      </div>
+
+      <div class="menu-cat"><h3>Desayunos · Menú de niños · Tacos · Ensaladas</h3>
+        <p>Contenido completo por confirmar con el dueño en la visita. No se publican platos ni precios de estas categorías hasta confirmarlos.</p>
+      </div>
+      <p class="note">* Precio de delivery, por confirmar con el dueño.</p>
+    </div>
+  </section>
+
+  <section id="catering">
+    <div class="wrap">
+      <h2 data-es="Catering y eventos — por confirmar con el dueño" data-en="Catering and events — to confirm with the owner">Catering y eventos — por confirmar con el dueño</h2>
+      <p>No hay menú de catering, paquetes ni mínimos verificados. No se presenta ningún precio de catering en esta muestra.</p>
+      <p>Nota de referencia, sin presentarla como servicio confirmado: el negocio aparece listado para eventos en Eventective, descrito como comida caribeña deliciosa y asequible para un próximo evento. Si el dueño confirma que ofrece catering, esta sección se completa con su menú, paquetes y mínimos reales.</p>
+      <img class="photo small" src="fotos/ensalada-pro.jpg" alt="Ensalada real del negocio, regenerada con calidad profesional">
+      
+    </div>
+  </section>
+
+  <section id="visitanos" class="alt">
+    <div class="wrap">
+      <h2 data-es="Visítanos" data-en="Visit us">Visítanos</h2>
+      <div class="grid2">
+        <div>
+          <p><strong>La Esquina Sabrosa</strong><br>
+          2730 W Waters Ave, Tampa, FL 33614<br>
+          Tel: <a href="tel:+18139311443">(813) 931-1443</a><br>
+          Instagram (por confirmar): <a href="https://www.instagram.com/laesquinasabrosa_">@laesquinasabrosa_</a></p>
+          <p><strong data-es="Horario" data-en="Hours">Horario</strong><br>
+          Lunes a sábado: 8 AM – 8 PM<br>
+          Domingo: 9 AM – 6 PM<br>
+          <em>Horario de Restaurantji, actualizado el 16 de septiembre de 2026.</em></p>
+        </div>
+        <img class="photo" src="fotos/interior-pro.jpg" alt="Interior real del negocio con su tablero de menú, regenerado con calidad profesional">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>La Esquina Sabrosa</strong> · 2730 W Waters Ave, Tampa, FL 33614 · <a href="tel:+18139311443">(813) 931-1443</a></p>
+    <p>Muestra en borrador — no publicada. No enviada al negocio. Precios de delivery, por confirmar con el dueño.</p>
+  </div>
+</footer>
+</body>
+</html>
